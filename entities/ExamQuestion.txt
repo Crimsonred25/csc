@@ -1,0 +1,46 @@
+{
+  "name": "ExamQuestion",
+  "type": "object",
+  "properties": {
+    "exam_id": {
+      "type": "string"
+    },
+    "question_text": {
+      "type": "string"
+    },
+    "choices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "correct_answer": {
+      "type": "string",
+      "description": "The label of the correct choice (A, B, C, D)"
+    },
+    "points": {
+      "type": "number",
+      "default": 1
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "explanation": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "exam_id",
+    "question_text",
+    "correct_answer"
+  ]
+}

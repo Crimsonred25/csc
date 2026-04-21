@@ -1,0 +1,40 @@
+{
+  "name": "ActivityLog",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "exam_taken",
+        "flashcard_reviewed",
+        "pdf_viewed",
+        "user_signup",
+        "user_approved",
+        "user_rejected",
+        "content_created",
+        "content_updated",
+        "content_deleted",
+        "login"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "resource_type": {
+      "type": "string"
+    },
+    "resource_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "action",
+    "description"
+  ]
+}

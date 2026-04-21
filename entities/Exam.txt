@@ -1,0 +1,48 @@
+{
+  "name": "Exam",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "general_information",
+        "numerical_reasoning",
+        "analytical_ability",
+        "verbal_reasoning",
+        "clerical_operations",
+        "philippine_constitution",
+        "code_of_conduct",
+        "comprehensive"
+      ]
+    },
+    "time_limit_minutes": {
+      "type": "number",
+      "default": 60
+    },
+    "is_ranked": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_published": {
+      "type": "boolean",
+      "default": false
+    },
+    "total_points": {
+      "type": "number",
+      "default": 0
+    },
+    "question_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

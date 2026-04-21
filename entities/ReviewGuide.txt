@@ -1,0 +1,41 @@
+{
+  "name": "ReviewGuide",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the review guide"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "general_information",
+        "numerical_reasoning",
+        "analytical_ability",
+        "verbal_reasoning",
+        "clerical_operations",
+        "philippine_constitution",
+        "code_of_conduct",
+        "other"
+      ]
+    },
+    "file_url": {
+      "type": "string",
+      "description": "URL to the uploaded PDF file"
+    },
+    "thumbnail_url": {
+      "type": "string"
+    },
+    "view_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "file_url"
+  ]
+}

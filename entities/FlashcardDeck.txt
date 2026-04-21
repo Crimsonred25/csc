@@ -1,0 +1,32 @@
+{
+  "name": "FlashcardDeck",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "general_information",
+        "numerical_reasoning",
+        "analytical_ability",
+        "verbal_reasoning",
+        "clerical_operations",
+        "philippine_constitution",
+        "code_of_conduct",
+        "other"
+      ]
+    },
+    "card_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
